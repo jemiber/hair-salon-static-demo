@@ -1,0 +1,630 @@
+/*===========================================
+    CSS RESET - meyerweb.com
+===========================================*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*******************************
+UNIVERSAL BASE
+*******************************/
+:root{
+    --primary-light: #fff;
+    --primary-dark: #a89f9f;
+    --accent-light: #ececee;
+    --accent-dark: #000;
+}
+
+html{
+    font-size: 10px;
+}
+body{
+    background-color: var(--primary-light);
+}
+/*******************************
+BASE STYLE
+*******************************/
+h1,
+h2,
+h3,
+h5,
+a,
+main{
+    font-family: 'Cinzel', 'serif';
+}
+.first-container p,
+.second-container p{
+    font-family: 'Arial', 'Helvetica', 'sans-serif';
+    font-size: 1.5rem;
+}
+h1{
+    font-size: 9rem;
+    color: var(--primary-light);
+}
+h2{
+    font-size: 2rem;
+    font-weight: 600;
+}
+h3{
+    font-size: 2rem;
+    font-weight: 600;
+}
+h5{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+a{
+    text-decoration: none;
+    color: var(--accent-dark);
+}
+main p,
+.promo p{
+    font-size: 1.5rem;
+}
+.btn{
+    font-size: 1.3rem;
+    color: var(--primary-light);
+    background-color: var(--accent-dark);
+    padding: 1rem
+}
+.name{
+    color: var(--primary-light);
+    background-color: var(--accent-dark);
+}
+.name p{
+    font-size: 1.4rem;
+}
+.name span{
+    font-size: 1rem;
+}
+.slogan p,
+.time{
+    color: var(--primary-light);
+}
+.small{
+    background-color: var(--accent-dark);
+    color: var(--primary-light);
+}
+.small p{
+    font-size: 1.3rem;
+}
+.arrows{
+    color: var(--primary-light);
+    font-size: 1.3rem;
+}
+/*******************************
+LAYOUT
+*******************************/
+header{
+    background-color: var(--primary-light);
+    width: 100%;
+    height: 50px;
+}
+nav{
+    width: 100%;
+}
+.logo{
+    width: 5%;
+    padding-top: 0;
+    padding-left: 5rem;
+}
+.logo img{
+    width: 5vw;
+}
+nav ul{
+    width: 90%;
+    padding-left: 1rem;
+    text-align:justify;
+}
+nav a{
+    padding-left: 5rem;
+}
+nav i{
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+nav .book{
+    width: 10%;
+}
+
+main{
+    background-color: var(--primary-dark);
+    width: 100%;
+    height: 800px;
+}
+main img{
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+h1{
+    line-height: 9rem;
+    padding-bottom: 1.5rem;
+}
+.slogan{
+    padding-left: 10rem;
+    position: absolute;
+    bottom: 30%;
+}
+.slogan p{
+    padding-bottom: 3.5rem;
+    letter-spacing: .3rem;
+}
+
+.time{
+    transform: rotate(90deg);
+    width: 25%;
+    margin-left: 119rem;
+    position: absolute;
+    bottom: 40%;
+    letter-spacing: .5rem;
+}
+
+.small{
+    width: 15%;
+    height: 25%;
+    padding-top: 5rem;
+    padding-left: 2rem;
+    margin-left: 10rem;
+    position: absolute;
+    bottom: .2%;
+}
+.small p{
+    padding-bottom: 1.5rem;
+    line-height: 2rem;
+}
+.small h3+p {
+    line-height: 3rem;
+}
+.arrows{
+    width: 100%;
+    text-align: end;
+    padding-right: 5rem;
+    position: absolute;
+    bottom: 2%;
+}
+.arrows i{
+    padding: 1.3rem;
+    color: var(--accent-dark);
+    border:0;
+    background-color: var(--primary-light);
+    border-radius: 50%;
+
+}
+
+.first-container{
+    width: 100%;
+    height: 200px;
+    padding: 10rem 5rem 5rem 10rem
+}
+.first-container img{
+    width: 25%;
+    padding-bottom: 1.5rem;
+}
+.first-container section{
+    width: 30%;
+    text-align: center;
+    line-height: 2.3rem;
+    padding-left: 5rem;
+    padding-bottom: 10rem;
+}
+.first-container h5{
+    padding-bottom: 1.5rem;
+}
+.second-container{
+    width: 100%;
+}
+.momentum{
+    width: 100%;
+    background: var(--accent-light);
+    width: 40%;
+    padding-left: 20rem;
+    padding-top: 5rem;
+    padding-bottom: 8rem;
+}
+h2{
+    padding-bottom: 2rem;
+    line-height: 3rem;
+}
+.second-container p{
+    padding-bottom: 3.5rem;
+    line-height: 3rem;
+}
+.second-container div{
+    width: 60%;
+    padding-top: 5rem;
+    padding-left: 8rem;
+    padding-bottom: 5.1rem;
+    background-color: var(--accent-light);
+}
+.second-container img{
+    width: 30vw;
+}
+
+.third-container{
+    width: 100%;
+    padding: 5rem 0 8rem 5rem;
+}
+.alita,
+.ayesha,
+.smith{
+    width: 30%;
+}
+.third-container img{
+    width: 20vw;
+}
+.name{
+    width: 45%;
+    padding: 1rem 3rem;
+    text-align: center;
+    margin-left: 10%;
+    margin-bottom: 8rem;
+}
+
+.fourth-container{
+    width: 100%;
+    padding-bottom: 8rem;
+}
+.promo{
+    width: 40%;
+    background-color: var(--accent-light);
+    height: 300px;
+    padding: 5rem;
+    margin-left: 5rem;
+}
+.promo p,
+.promo h2{
+    padding-top: 2rem;
+}
+.promo h2{
+    line-height: 4rem;
+    padding-bottom: 3rem;
+}
+.fourth-container div{
+    width: 10%;
+    margin-right: 46.5%;
+}
+.fourth-container img{
+    width: 200%;
+}
+
+.fifth-container{
+    width: 100%;
+    height: 400px;
+    padding-top: 8rem;
+    padding-left: 5rem;
+    padding-right: 4rem;
+}
+.fifth-container h2{
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: 1rem;
+}
+.fifth-container section{
+    width: 33.333%;
+}
+.fifth-container img{
+    padding-bottom: 1.5rem;
+    width: 30vw;
+}
+
+/*******************************
+FLOATS
+*******************************/
+header,
+nav,
+main,
+.first-container,
+.second-container,
+.third-container,
+.fourth-container,
+.fifth-container{
+    clear: both;
+}
+nav ul,
+nav .book,
+main img{
+    float: left;
+}
+.fourth-container div{
+    float: right;
+}
+.first-container section,
+.momentum,
+.second-container div,
+.alita,
+.ayesha,
+.smith,
+.promo,
+.colum{
+    float: left;
+}
+
+/*******************************
+MEDIA QUERIES
+*******************************/
+@media screen and (max-width: 768px){
+    nav{
+        width: 100%;
+        padding-left:0;
+    }
+    .logo{
+        padding-left: 1rem;
+        width: 10%;
+    }
+    nav ul{
+        width: 80%;
+        padding-left:0;
+    }
+    nav a,
+    nav i{
+        padding-left: 1.5rem;
+    }
+    main{
+        width: 100%;
+        height: 300px;
+    }
+    .slogan{
+        padding-left: 2rem;
+        position: absolute;
+        bottom: 60%;
+    }
+    h1{
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+    .slogan p{
+        font-size: .8rem;
+    }
+    .slogan .btn{
+        font-size: .8rem;
+    }
+    .time{
+        width: 50%;
+        margin-left: 40rem;
+        position: absolute;
+        bottom: 55%;
+    }
+    .time>p{
+        font-size: .8rem;
+        letter-spacing: .2rem;
+    }
+    .small{
+        width: 25%;
+        padding-right: 2rem;
+        padding-top: 2rem;
+        position: absolute;
+        bottom: 35%;
+        margin-left: 2rem;
+        height: 150px;
+    }
+    .small p,
+    .small h2,
+    .small a{
+        font-size: .8rem;
+    }
+    .small p{
+        padding-bottom: 1rem;
+        line-height: .5rem;
+    }
+    .arrows i{
+        font-size: .8rem;
+        padding: .5rem;
+        margin-bottom: 60%;
+    }
+    .first-container{
+        padding-top: 20rem;
+        width: 100%;
+        padding-left: 2rem;
+    }
+    .first-container section{
+        width: 33.3333%;
+    }
+    .first-container p{
+        font-size: 1rem;
+    }
+    .momentum{
+        padding-left: 2rem;
+    }
+    .momentum h2{
+        font-size: 1.8rem;
+    }
+    .momentum p{
+        font-size: 1rem;
+    }
+    .momentum a{
+        font-size: 1rem;
+    }
+    .second-container div{
+        width: 60%;
+        height: 43.5rem;
+    }
+    .second-container img{
+        padding-top: 8rem;
+    }
+    .third-container p{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .third-container span{
+        font-size: .8rem;
+        text-align: center;
+    }
+    .name{
+        width: 15vw;
+        padding: 1rem;
+    }
+    .fourth-container{
+        width: 100%;
+        background-color: var(--accent-light);
+        height: 30rem;
+    }
+    .promo{
+        width: 30%;
+        padding-left:0;
+    }
+    .promo p{
+        font-size: 1rem;
+    }
+    .promo h2{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .promo a{
+        font-size: .8rem;
+        padding: 1rem;
+    }
+    .fourth-container div{
+        width: 50%;
+        margin: 0;
+        background-color: var(--accent-light);
+    }
+    .fourth-container img{
+        width: 55vw;
+        padding-right: 3rem;
+    }
+    .fifth-container h2{
+        font-size: 2rem;
+    }
+    .fifth-container img{
+        padding-bottom: .5rem;
+        width: 27vw;
+    }
+}
